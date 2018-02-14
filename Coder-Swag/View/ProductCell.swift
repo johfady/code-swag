@@ -8,8 +8,16 @@
 
 import UIKit
 
-class Products: UICollectionViewCell {
+class ProductCell: UICollectionViewCell {
     @IBOutlet weak var productimage:UIImageView!
-    @IBOutlet weak var proudcttile:UILabel!
+    @IBOutlet weak var producttile:UILabel!
     @IBOutlet weak var productprice:UILabel!
+    
+    func updateviews(product:Product){
+        productimage.image=UIImage(named:product.imagename)
+        producttile.text=product.title
+        productprice.text=product.price
+    }
+    
 }
+

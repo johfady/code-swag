@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Products {
+struct Product {
     private(set) public var title:String
     private(set) public var price:String
     private(set) public var imagename:String
     init(title:String,price:String,imagename:String) {
-        self.title=title
-        self.price=price
-        self.imagename=imagename
+        self.title = title
+        self.price = price
+        self.imagename = imagename
         
     }
 }

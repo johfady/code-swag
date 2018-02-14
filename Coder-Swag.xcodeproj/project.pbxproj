@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E854ED901FF2058D00FC18B0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E854ED8F1FF2058D00FC18B0 /* ProductCell.swift */; };
+		E854ED921FF20AFD00FC18B0 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E854ED911FF20AFD00FC18B0 /* Product.swift */; };
+		E854ED941FF2159C00FC18B0 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E854ED931FF2159C00FC18B0 /* ProductsVC.swift */; };
 		E868D18A1FEED5F600C90044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E868D1891FEED5F600C90044 /* AppDelegate.swift */; };
 		E868D18C1FEED5F600C90044 /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E868D18B1FEED5F600C90044 /* CategoriesVC.swift */; };
 		E868D18F1FEED5F600C90044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E868D18D1FEED5F600C90044 /* Main.storyboard */; };
 		E868D1911FEED5F600C90044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E868D1901FEED5F600C90044 /* Assets.xcassets */; };
 		E868D1941FEED5F600C90044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E868D1921FEED5F600C90044 /* LaunchScreen.storyboard */; };
+		E8A3417E1FF09918002685F5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3417D1FF09918002685F5 /* CategoryCell.swift */; };
+		E8A341801FF09D5D002685F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A3417F1FF09D5D002685F5 /* Category.swift */; };
+		E8A341831FF0A059002685F5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A341821FF0A059002685F5 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E854ED8F1FF2058D00FC18B0 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		E854ED911FF20AFD00FC18B0 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E854ED931FF2159C00FC18B0 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		E868D1861FEED5F600C90044 /* Coder-Swag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coder-Swag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E868D1891FEED5F600C90044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E868D18B1FEED5F600C90044 /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		E868D1901FEED5F600C90044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E868D1931FEED5F600C90044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E868D1951FEED5F600C90044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8A3417D1FF09918002685F5 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		E8A3417F1FF09D5D002685F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E8A341821FF0A059002685F5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,9 @@
 		E868D1881FEED5F600C90044 /* Coder-Swag */ = {
 			isa = PBXGroup;
 			children = (
+				E8A341811FF0A037002685F5 /* Services */,
+				E8A3417C1FF09855002685F5 /* View */,
+				E8A3417B1FF097FA002685F5 /* Model */,
 				E868D19B1FEED79800C90044 /* Controller */,
 				E868D1891FEED5F600C90044 /* AppDelegate.swift */,
 				E868D18D1FEED5F600C90044 /* Main.storyboard */,
@@ -68,8 +83,35 @@
 			isa = PBXGroup;
 			children = (
 				E868D18B1FEED5F600C90044 /* CategoriesVC.swift */,
+				E854ED931FF2159C00FC18B0 /* ProductsVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E8A3417B1FF097FA002685F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8A3417F1FF09D5D002685F5 /* Category.swift */,
+				E854ED911FF20AFD00FC18B0 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8A3417C1FF09855002685F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8A3417D1FF09918002685F5 /* CategoryCell.swift */,
+				E854ED8F1FF2058D00FC18B0 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8A341811FF0A037002685F5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8A341821FF0A059002685F5 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +188,12 @@
 			files = (
 				E868D18C1FEED5F600C90044 /* CategoriesVC.swift in Sources */,
 				E868D18A1FEED5F600C90044 /* AppDelegate.swift in Sources */,
+				E8A3417E1FF09918002685F5 /* CategoryCell.swift in Sources */,
+				E854ED921FF20AFD00FC18B0 /* Product.swift in Sources */,
+				E854ED941FF2159C00FC18B0 /* ProductsVC.swift in Sources */,
+				E854ED901FF2058D00FC18B0 /* ProductCell.swift in Sources */,
+				E8A341801FF09D5D002685F5 /* Category.swift in Sources */,
+				E8A341831FF0A059002685F5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S94B699FS;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "youssef.Coder-Swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S94B699FS;
 				INFOPLIST_FILE = "Coder-Swag/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "youssef.Coder-Swag";
 				PRODUCT_NAME = "$(TARGET_NAME)";
